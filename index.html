@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área De Login</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/mediaquerie.css">
 </head>
@@ -15,12 +15,23 @@
             </div>
             <div id="formulario">
                 <h1>LOGIN</h1>
-                <p>Seja Bem Vindo(a), Faça login para acessar sua conta</p>
-                <form action="login.php" method="post">
-                    <label for="iuser"><input type="text" name="user" id="iuser" placeholder="username :" required minlength="6" maxlength="25"></label>
-                    <label for="isenha"><input type="password" name="senha" id="isenha" placeholder="password :" required minlength="6" maxlength="20"></label>
+                <p id="inicial">Seja Bem Vindo(a), Faça login para acessar sua conta</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div id="user">
+                        <i class="material-icons">person</i>
+                        <input type="text" name="user" id="iuser" placeholder="username :" required minlength="6" maxlength="25" autocomplete="email">
+                        <label for="iuser">user</label>
+                    </div>
+                    <div id="senha">
+                        <i class="material-icons">vpn_key</i>
+                    <input type="password" name="senha" id="isenha" placeholder="password :" required minlength="6" maxlength="20" autocomplete="current-password">
+                    <label for="isenha">senha</label>
+                    </div>
                     <p><input type="submit" value="ENVIAR"></p>
                     <p><input type="reset" value="LIMPAR"></p>
+                    <a href="esqueci.html">
+                        Esqueci a Senha <i class="material-icons">mail</i>
+                    </a>
                 </form>
 
             </div>
