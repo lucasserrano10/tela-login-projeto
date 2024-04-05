@@ -6,6 +6,7 @@
     }
     section#login{
         width: 90vw;
+        height: 320px;
     }
     section#login > div#imagem{
         float: right;
@@ -19,6 +20,20 @@
     div#formulario > p#inicial{
         font-size: 16px;
     }
+    input {
+        width: 82%;
+    }
+    div#formulario > form >  p > input[type=submit]{
+        transform: translateY(-6%);
+        width: 50vw;
+    }
+    div#formulario > form >  p > input[type=reset]{
+        transform: translateY(-6%);
+        width: 50vw;
+    }
+    div#formulario > form > a.botao{
+        transform: translateX(-4%);
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -27,6 +42,7 @@
     }
     section#login{
         width: 940px;
+        height: 350px;
     }
     section#login > div#imagem {
         float: left;
@@ -40,5 +56,14 @@
     }
     div#formulario > p#inicial{
         font-size: 20px;
+    }
+    div#formulario > form >  p > input[type=submit]{
+        transform: translateX(-4%);
+    }
+    div#formulario > form >  p > input[type=reset]{
+        transform: translateX(-4%);
+    }
+    input {
+        width: 82%;
     }
 }

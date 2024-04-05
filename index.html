@@ -17,19 +17,21 @@
                 <h1>LOGIN</h1>
                 <p id="inicial">Seja Bem Vindo(a), Faça login para acessar sua conta</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <div id="user">
-                        <i class="material-icons">person</i>
-                        <input type="text" name="user" id="iuser" placeholder="username :" required minlength="6" maxlength="25" autocomplete="email">
-                        <label for="iuser">user</label>
-                    </div>
-                    <div id="senha">
-                        <i class="material-icons">vpn_key</i>
-                    <input type="password" name="senha" id="isenha" placeholder="password :" required minlength="6" maxlength="20" autocomplete="current-password">
-                    <label for="isenha">senha</label>
+                    <div id="campo">
+                        <div id="user">
+                            <i class="material-icons">person</i>
+                            <input type="text" name="user" id="iuser" placeholder="username :" required minlength="6" maxlength="25" autocomplete="email">
+                            <label for="iuser">user</label>
+                        </div>
+                        <div id="senha">
+                            <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="password :" required minlength="6" maxlength="20" autocomplete="current-password">
+                        <label for="isenha">senha</label>
+                        </div>
                     </div>
                     <p><input type="submit" value="ENVIAR"></p>
                     <p><input type="reset" value="LIMPAR"></p>
-                    <a href="esqueci.html">
+                    <a href="esqueci.html" class="botao">
                         Esqueci a Senha <i class="material-icons">mail</i>
                     </a>
                 </form>
